@@ -1,0 +1,93 @@
+@mixin Dflex()
+    display: flex
+    justify-content: center
+    align-items: center
+
+.Home
+    @include Dflex()
+    flex-direction: column
+    gap: 2rem
+    
+    h1
+        animation: scale 1s
+        margin-top: 10rem
+        font-size: 5.5rem
+        font-weight: 800
+        line-height: 6.5rem
+        text-align: center
+        word-spacing: -5px
+        letter-spacing: -1PX
+        .spanStick
+            position: relative
+            .rectYell
+                position: absolute
+                // top: 12.5rem
+                // left: 42.5rem
+                top: 3rem
+                left: 1px
+                height: 4.5rem
+                width: 26.5rem
+                background: #fff2bd
+                z-index: -1
+                transform: rotate(-2deg)
+        .span1
+            color: #fff2bd
+            -webkit-text-stroke: 3px black 
+        .span2
+            text-decoration: underline #fff2bd 10px
+    p
+        // animation: fadeIn 5s
+        animation: invisible 0.2s ,scale 1s 0.2s
+        font-size: 20px
+        text-align: center
+        line-height: 2rem
+    .middleLink
+        // animation: scale 2s
+        animation: invisible 0.8s ,scale 1s 0.8s
+        // animation-delay: 1s
+        color: #f6f6f6
+        background: #3c83f5
+        height: 4rem
+        width: 20rem
+        font-size: 22px
+        font-weight: 600
+        border-radius: 12px
+        border: none
+        @include Dflex()
+        gap: 5px
+        transition: 0.3s
+        box-shadow: 5px 5px 5px #3c83f584
+        svg
+            font-size: 1.8rem
+            path
+                color: white
+    .middleLink:hover
+                background: #2574f4
+                box-shadow: 5px 5px 10px #2574f484
+    .imgEx
+        animation: invisible 1.2s ,fadeIn 3s 1.2s
+        margin-top: 2rem
+        height: 40rem
+        width: 63rem      
+        border: 1px solid #546e7a94   
+        border-radius: 10px  
+
+@keyframes invisible
+    0% 
+        opacity: 0
+    100%
+        opacity: 0
+
+@keyframes scale
+    0%
+        // opacity: 0
+        transform: scale(1.05)
+    100%
+        // opacity: 1
+        transform: scale(1)
+
+@keyframes fadeIn
+    0%
+        opacity: 0
+    100%
+        opacity: 1
