@@ -2,13 +2,15 @@ import {Link} from 'react-router-dom'
 import { GoArrowRight } from "react-icons/go";
 import ImgExemple from '/exemple.jpg'
 import ImgExemple2 from '/exemple2.png'
-
+import GigaChad from '/gigachad.webp'
+import { IoMdStar } from "react-icons/io";
+ 
 function Home() {
 
     return (
       <div className="Home">
         
-          <h1>
+          <h1 className='title'>
             The <span className='spanStick'>
               <div className='rectYell'></div>
               Simplest
@@ -26,6 +28,51 @@ function Home() {
             <GoArrowRight />
           </Link>
           <img className='imgEx' src={ImgExemple2}/>
+
+          <div className="cards">
+            <div className='card'>
+                <Link className='giga'>
+                  <img src={GigaChad}/>
+                </Link>
+              <div className='stars'><IoMdStar /><IoMdStar /><IoMdStar /><IoMdStar /><IoMdStar /></div>
+              <p>“Nimboard is the best tool for decluttering my mind when preparing for essays and projects.”</p>
+              <h3>
+                Giga Chad
+                <br />
+                <span>
+                  Le plus grand de tout les Chads
+                </span>
+              </h3>
+            </div>
+            <div className='card'>
+                <Link className='giga'>
+                  <img src={GigaChad}/>
+                </Link>
+              <div className='stars'><IoMdStar /><IoMdStar /><IoMdStar /><IoMdStar /><IoMdStar /></div>
+              <p>“Nimboard is the best tool for decluttering my mind when preparing for essays and projects.”</p>
+              <h3>
+                Giga Chad
+                <br />
+                <span>
+                  Le plus grand de tout les Chads
+                </span>
+              </h3>
+            </div>
+            <div className='card'>
+                <Link className='giga'>
+                  <img src={GigaChad}/>
+                </Link>
+              <div className='stars'><IoMdStar /><IoMdStar /><IoMdStar /><IoMdStar /><IoMdStar /></div>
+              <p>“Nimboard is the best tool for decluttering my mind when preparing for essays and projects.”</p>
+              <h3>
+                Giga Chad
+                <br />
+                <span>
+                  Le plus grand de tout les Chads
+                </span>
+              </h3>
+            </div>
+          </div>
       </div>
     )
   }

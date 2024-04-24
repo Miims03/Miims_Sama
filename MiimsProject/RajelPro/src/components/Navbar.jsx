@@ -12,7 +12,7 @@ function Navbar() {
         <nav>
             <ul>
                 <Link to='/' className='link1'>Home</Link>
-                <Link to='/p' className='link2'>Sign in</Link>
+                <Link to='/signin' className='link2'>Sign in</Link>
                 <Link to='/p' className='link3'>
                     Sign up 
                     <GoArrowRight />

@@ -94,7 +94,7 @@
   flex-direction: column;
   gap: 2rem;
 }
-.Home h1 {
+.Home .title {
   animation: scale 1s;
   margin-top: 10rem;
   font-size: 5.5rem;
@@ -104,10 +104,10 @@
   word-spacing: -5px;
   letter-spacing: -1PX;
 }
-.Home h1 .spanStick {
+.Home .title .spanStick {
   position: relative;
 }
-.Home h1 .spanStick .rectYell {
+.Home .title .spanStick .rectYell {
   position: absolute;
   top: 3rem;
   left: 1px;
@@ -117,11 +117,11 @@
   z-index: -1;
   transform: rotate(-2deg);
 }
-.Home h1 .span1 {
+.Home .title .span1 {
   color: #fff2bd;
   -webkit-text-stroke: 3px black;
 }
-.Home h1 .span2 {
+.Home .title .span2 {
   -webkit-text-decoration: underline #fff2bd 10px;
           text-decoration: underline #fff2bd 10px;
 }
@@ -166,6 +166,60 @@
   border: 1px solid rgba(84, 110, 122, 0.5803921569);
   border-radius: 10px;
 }
+.Home .cards {
+  animation: scale 1s;
+  margin-top: 4rem;
+  width: 68rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.Home .cards .card {
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.Home .cards .card .giga {
+  overflow: hidden;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Home .cards .card .giga img {
+  height: 3.5rem;
+  width: 5.5rem;
+}
+.Home .cards .card .stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.Home .cards .card .stars svg path {
+  color: #fbbf24;
+}
+.Home .cards .card p {
+  font-size: 14.5px;
+  line-height: 1.2rem;
+  font-style: italic;
+}
+.Home .cards .card h3 {
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+}
+.Home .cards .card h3 span {
+  font-weight: 500;
+  font-size: 12px;
+}
 
 @keyframes invisible {
   0% {
@@ -191,6 +245,115 @@
     opacity: 1;
   }
 }
+.Signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.Signin .test {
+  text-transform: capitalize;
+}
+.Signin .title {
+  animation: scale 1s;
+  margin-top: 10rem;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 6.5rem;
+  text-align: center;
+  word-spacing: -5px;
+  letter-spacing: -1PX;
+}
+.Signin form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 0.4rem;
+  width: 22rem;
+  height: 25rem;
+}
+.Signin form label {
+  font-size: 13px;
+}
+.Signin form input {
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 1px black solid;
+}
+.Signin form .pswline {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.Signin form .pswline .linkpsw {
+  font-size: 13px;
+  color: #3c83f5;
+}
+.Signin form .pswline .linkpsw:hover {
+  text-decoration: underline;
+}
+.Signin form .signinbtn {
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3c83f5;
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+.Signin form .signinbtn:hover {
+  background: #2574f4;
+}
+.Signin form .or {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+.Signin form .or div {
+  height: 0.8px;
+  width: 9.6rem;
+  background: rgba(0, 0, 0, 0.3960784314);
+}
+.Signin form .or p {
+  font-style: italic;
+}
+.Signin form .signingoogle {
+  width: 100%;
+  height: 2.8rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  border: 1px solid rgba(0, 0, 0, 0.1921568627);
+  color: black;
+  transition: 0.3s;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1921568627);
+}
+.Signin form .signingoogle:hover {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1921568627);
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -8,7 +8,7 @@
     flex-direction: column
     gap: 2rem
     
-    h1
+    .title
         animation: scale 1s
         margin-top: 10rem
         font-size: 5.5rem
@@ -35,12 +35,14 @@
             -webkit-text-stroke: 3px black 
         .span2
             text-decoration: underline #fff2bd 10px
+
     p
         // animation: fadeIn 5s
         animation: invisible 0.2s ,scale 1s 0.2s
         font-size: 20px
         text-align: center
         line-height: 2rem
+
     .middleLink
         // animation: scale 2s
         animation: invisible 0.8s ,scale 1s 0.8s
@@ -61,9 +63,11 @@
             font-size: 1.8rem
             path
                 color: white
+
     .middleLink:hover
                 background: #2574f4
                 box-shadow: 5px 5px 10px #2574f484
+
     .imgEx
         animation: invisible 1.2s ,fadeIn 3s 1.2s
         margin-top: 2rem
@@ -71,6 +75,50 @@
         width: 63rem      
         border: 1px solid #546e7a94   
         border-radius: 10px  
+
+    .cards
+        animation: scale 1s
+        margin-top: 4rem
+        width: 68rem 
+        @include Dflex()
+        gap: 4rem
+        .card
+            width: 20rem 
+            // background: red
+            @include Dflex()
+            flex-direction: column
+            gap: 0.7rem
+            .giga
+                overflow: hidden
+                height: 3.5rem
+                width: 3.5rem
+                border-radius: 50%
+                @include Dflex()
+                img
+                    height: 3.5rem
+                    width: 5.5rem
+            .stars
+                @include Dflex()
+                gap: 3px
+                svg
+                    path
+                        color: #fbbf24
+            p
+                font-size: 14.5px
+                line-height: 1.2rem
+                font-style: italic
+            h3
+                margin-top: 1.5rem
+                font-weight: 500
+                font-size: 15px
+                text-align: center
+                span
+                    font-weight: 500
+                    font-size: 12px
+
+
+
+
 
 @keyframes invisible
     0% 
